@@ -8,10 +8,16 @@
 </head>
 <body>
   <h1>Weather Alerts App</h1>
-  <input type="text" id="state-input" placeholder="Enter state abbreviation">
-  <button id="fetch-alerts">Get Weather Alerts</button>
+
+  <!-- Form wrapping input and button -->
+  <form id="alert-form">
+    <input type="text" id="state-input" placeholder="Enter state abbreviation" maxlength="2">
+    <button type="submit" id="fetch-alerts">Get Weather Alerts</button>
+  </form>
+
   <div id="alerts-display"></div>
   <div id="error-message" class="hidden"></div>
+
   <script src="./index.js"></script>
 </body>
 </html>
